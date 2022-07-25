@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<events>
+  <event timestamp="00:00:33:000" value='{"type":"adBreakTrigger", "offset":5, "duration": 10, "targeting": {"key1":"value1", "key2":"value2"}}'/>
+  <event timestamp="00:01:47:590" value='{"type":"adBreakTrigger", "offset":10, "duration": 15, "targeting": {"key1":"value2"}}'/>
+</events>
