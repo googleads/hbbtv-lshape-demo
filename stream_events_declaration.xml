@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<dsmcc xmlns="urn:dvb:mis:dsmcc:2009">
+ <dsmcc_object component_tag="203">
+  <stream_event stream_event_id="203" stream_event_name="eventItem"/>
+ </dsmcc_object>
+</dsmcc>
