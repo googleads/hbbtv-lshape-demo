@@ -1,0 +1,97 @@
+/**
+ * Copyright 2014 Google Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/* general settings related to Hbb */
+body {
+  /* we explicitly set the size of the body element */
+  width: 100%;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+/** application/oipfApplicationManager embedded object style  */
+object#application-manager {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 0px;
+  height: 0px;
+}
+
+#broadcast-wrapper,
+#ads-wrapper {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 1280px;
+  height: 720px;
+  z-index: 10;
+  overflow: hidden;
+  transition: all 0.4s linear;
+}
+
+#ads-wrapper {
+  z-index: 5;
+  visibility: hidden;
+}
+
+#ads-wrapper.show {
+  visibility: visible;
+}
+
+#broadcast-video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+#broadcast-video.resize {
+  position: absolute;
+  top: 0px;
+  left: 250px;
+  width: 1030px;
+  height: 580px;
+  transition: all 0.5s linear;
+}
+
+#broadcast-video.inner_resize {
+  position: absolute;
+  top: 0px;
+  left: 576px;
+  width: 704px;
+  height: 396px;
+  transition: none !important;
+}
+
+#console {
+  position: absolute;
+  z-index: 100;
+  top: 50px;
+  left: 760px;
+  width: 500px;
+  height: 500px;
+  padding: 5px;
+  background: #FFF;
+  color: #000;
+  border-color: #F00;
+  font-size: 12px;
+  opacity: 0.4;
+}
+
+#console .error {
+  color: #F00;
+  font-weight: bold;
+}
